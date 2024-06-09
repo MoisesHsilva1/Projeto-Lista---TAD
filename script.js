@@ -19,3 +19,5 @@ ButonFiliar.addEventListener('click', function(){
 ButtonTirarFila.addEventListener('click', function() {
     validarInput();
 })
+
+const Element = []

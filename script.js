@@ -11,7 +11,6 @@ function validarInput () {
     } else {
        return true;
     }
-   
 }
 
 ButonFiliar.addEventListener('click', function(){

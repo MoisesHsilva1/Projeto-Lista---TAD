@@ -5,16 +5,18 @@ const ElementoFila = document.getElementById('FilaLista');
 
 
 function validarInput () {
-    window.alert("teste")
-   /* if(ItemInput.value == '') {
+   if(ItemInput.value == '') {
         window.alert('Digite um valor correto');
-       // return false;
+       return false;
     } else {
-      //  return true;
+       return true;
     }
-    */
+   
 }
 
 ButonFiliar.addEventListener('click', function(){
-     validarInput();
+    validarInput();
+})
+ButtonTirarFila.addEventListener('click', function() {
+    validarInput();
 })

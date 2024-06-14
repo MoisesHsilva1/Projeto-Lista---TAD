@@ -12,6 +12,9 @@ function validarInput () {
        return true;
     }
 }
+function AdicionarValor () {
+    
+}
 
 ButonFiliar.addEventListener('click', function(){
     validarInput();

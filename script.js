@@ -1,27 +1,25 @@
-const ItemInput =  document.getElementById('ItemInput');
-const ButonFiliar =  document.getElementById('FiliarButton');
-const ButtonTirarFila = document.getElementById('Desenfilirear');
-const ElementoFila = document.getElementById('FilaLista');
-
-
-function validarInput () {
-   if(ItemInput.value == '') {
-        window.alert('Digite um valor correto');
-       return false;
-    } else {
-       return true;
+class ListaTAD {
+    constructor() {
+        this.ItemInput = document.getElementById('ItemInput');
+        this.ButonFiliar = document.getElementById('FiliarButton');
+        this.ButtonTirarFila = document.getElementById('Desenfilirear');
+        this.ElementoFila = document.getElementById('FilaLista');
+    }
+    validarInput() {
+        if (ItemInput.value == '') {
+            window.alert('Digite um valor correto');
+            return false;
+        } 
+            return true;
+    }
+    addEventListeners() {
+        this.ButonFiliar.addEventListener('click', () => this.validarInput());
+        this.ButtonTirarFila.addEventListener('click', () => this.ButtonTirarFila());
     }
 }
-function AdicionarValor () {
-    
-}
+let listaTad =  new ListaTAD();
+listaTad.addEventListeners();
 
-ButonFiliar.addEventListener('click', function(){
-    validarInput();
-})
-ButtonTirarFila.addEventListener('click', function() {
-    validarInput();
-})
 
-const Element = []
+
 
